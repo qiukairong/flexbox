@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局</title>
+    <style>
+        .A {
+            background-color: #f44336;
+        }
+        
+        .B {
+            background-color: #ffeb3b;
+        }
+        
+        .C {
+            background-color: #4caf50;
+        }
+        
+        .D {
+            background-color: #03a9f4;
+        }
+        
+        .E {
+            background-color: #673ab7;
+        }
+        
+        .F {
+            background-color: #f06292;
+        }
+        
+        .G {
+            background-color: #536dfe;
+        }
+        
+        .H {
+            background-color: #18ffff;
+        }
+        
+        .I {
+            background-color: #ffa726;
+        }
+        
+        .J {
+            background-color: #a1887f;
+        }
+        
+        .box {
+            width: 50PX;
+            height: 50PX;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, .18);
+            font-size: 2em;
+        }
+        /* 
+        flex-container属性：
+        
+        1.flex-wrap设置是否分行：
+            默认值nowrap不分行，wrap分行
+        2.flex-flow是flex-direction和flex-wrap的组合
+            默认值是row主轴,wrap分行
+            flex-flow: row wrap;
+            flex-flow: column wrap;
+            flex-flow: row nowrap;
+            flex-flow: column nowrap;
+
+        3.align-content当flex-wrap的值是wrap时才会生效，设置flex-item多于一行的时候item的布局，设置各行的对齐方式
+            值太多不做解释...
+            align-content: space-around;
+        */
+        
+        .flex-container {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            background-color: #eeeeee;
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 外部为FlexContainer -->
+    <div class="flex-container">
+        <!-- 内部为FlexItem -->
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+        <div class="box F">F</div>
+        <div class="box G">G</div>
+        <div class="box H">H</div>
+        <div class="box I">I</div>
+        <div class="box J">J</div>
+    </div>
+</body>
+
+</html>

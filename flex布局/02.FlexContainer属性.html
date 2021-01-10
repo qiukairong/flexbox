@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局</title>
+    <style>
+        .A {
+            background-color: #f44336;
+        }
+        
+        .B {
+            background-color: #ffeb3b;
+        }
+        
+        .C {
+            background-color: #4caf50;
+        }
+        
+        .D {
+            background-color: #03a9f4;
+        }
+        
+        .E {
+            background-color: #673ab7;
+        }
+        
+        .box {
+            width: 50PX;
+            height: 50PX;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, .18);
+            font-size: 2em;
+        }
+        /* 
+        flex-container属性：
+        
+        1.flex-direction设置item的主轴：
+            默认值为row横主轴，coolumn为纵主轴，row-reverse横主轴镜像，column-reverse纵主轴镜像
+        2.justify-content设置item在主轴上的位置：
+            默认值flex-star主轴起始方向，center主轴中间，flex-end主轴结束方向
+        3.align-items设置item的交叉轴位置：
+            默认值flex-star交叉轴起始方向，center交叉轴中间，flex-end交叉轴结束方向
+        */
+        
+        .flex-container {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 外部为FlexContainer -->
+    <div class="flex-container">
+        <!-- 内部为FlexItem -->
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+    </div>
+</body>
+
+</html>
